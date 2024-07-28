@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>問い合わせフォーム</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <dl>
+                <dt>お問い合わせの種別</dt>
+                <dd>
+                    <label><input type="checkbox" name="type" value="">お問い合わせ</label>
+                    <label></label><input type="checkbox" name="type" value="">新規お申し込み</label>
+                    <label></label><input type="checkbox" name="type" value="">資料請求</label>
+                </dd>
+                <dt>お名前<span class="must">※</span></dt>
+                <dd>
+                    <input type="text" name="name" required placeholder="田中 花子">
+                </dd>
+                <dt>ふりがな<span class="must">※</span></dt>
+                <dd>
+                    <input type="text" name="kana" required placeholder="たなか はなこ">
+                </dd>
+                <dt>メールアドレス<span class="must">※</span></dt>
+                <dd>
+                    <input type="email" name="email" required placeholder="xxxx@yyyy.com">
+                </dd>
+                <dt>性別</dt>
+                <dd>
+                    <label><input type="radio" name="sex" value="man">男性</label>
+                    <label><input type="radio" name="sex" value="woman">女性</label>
+                </dd>
+                <dt>どこでお知りになりましたか</dt>
+                <dd>
+                    <select name="">
+                        <option value="brochure/DM">ちらし・DM</option>
+                        <option value="refer">知り合いからの紹介</option>
+                        <option value="others">その他</option>
+                    </select>
+                </dd>
+                <dt>お問い合わせ・ご質問内容</dt>
+                <dd>
+                    <textarea name="" placeholder="ご質問内容をご記載ください" maxlength="300" cols="50" rows="3"></textarea>
+                </dd>
+            </dl>
+            <p class="submit"><input type="submit" name="submit" value="送信する"></p>
+        </form>
+    </div>
+</body>
+
+</html>
