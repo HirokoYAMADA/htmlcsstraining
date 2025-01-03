@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* header */
+h1,
+h2,
+h3 {
+    color: #2e706d;
+    font-family: "Kiwi Maru";
+}
+
+h1 {
+    font-size: 30px;
+    border-left: 0.5em solid #393939;
+    border-bottom: 0.1em solid #393939;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    border-left: 0.5em solid #393939;
+    border-bottom: 0.1em solid #393939;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+dl {
+    margin: 0 em
+}
+
+
+dt {
+    margin-bottom: 0em;
+}
+
+dd {
+    margin-top: 0em;
+    margin-left: 1em;
+}
+
+p {
+    color: #393939;
+    line-height: 1.5;
+    text-indent: 1em;
+}
+
+/* aタグ */
+a {
+    text-decoration: none;
+    transition: color 1s ease-out;
+}
+
+a:link {
+    color: #05a9a5
+}
+
+a:visited {
+    color: #184730
+}
+
+a:hover {
+    color: #ac0f02
+}
+
+
+#back {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    background-color: #196374;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+#back a:hover {
+    opacity: 0.0;
+}
+
+#back a:visited {
+    color: #ffffff;
+}
+
+/* リスト */
+ul {
+    list-style-type: circle;
+}
+
+/* index.html */
+#sitemap {
+    border: 1px solid #393939;
+    border-collapse: collapse;
+
+}
+
+#sitemap tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+#sitemap th {
+    border-bottom: 1px solid #393939;
+    padding: 5px;
+}
+
+#sitemap td {
+    border: 1px solid #393939;
+    padding: 10px;
+}
+
+.indexlink::after {
+    font-size: small;
+    content: "🔗"
+}
+
+/* form.html */
+.must {
+    color: #ff0000;
+    font: 0.8em sans-serif;
+}
+
+form {
+    /* border: 1px solid #393939; */
+    border-collapse: collapse;
+}
+
+form dl dt {
+    float: left;
+    padding: 1em;
+    /* background-color: #caf5ff; */
+}
+
+form dl dd {
+    padding: 1em 0 1em 14em;
+    /* border-top: 1px solid #393939; */
+    border-bottom: 1px solid #393939;
+    margin: 0;
+}
+
+input[type="text"] {
+    padding: 0.2em 10em 0.2em 0.1em;
+}
+
+label {
+    margin-right: 1em;
+}
+
+input[type="submit"] {
+    margin-left: 14em;
+    padding: 0.5em 4em;
+    background-color: #1a3b43;
+    border: 1px solid #393939;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.3;
+}
+
+/* llmservices.html */
+.header ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #393939;
+    justify-content: space-between;
+}
+
+.header ul li a {
+    display: block;
+    color: #ffffff;
+    background-color: #4b5d65;
+    padding: 6px 10px;
+    border-right: 1px solid #393939;
+    text-align: center;
+}
+
+.header ul li a:hover {
+    opacity: 0.8;
+}
+
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ol li::after {
+    content: ">";
+    margin: 10px;
+}
+
+nav ol li:last-child::after {
+    content: "";
+}
+
+#search {
+    padding-left: 32px;
+    background-image: url(images/search.jpg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.searchItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchItem {
+    background-color: #caf5ff;
+    /* width: 50%; */
+    height: 100;
+    padding: 10px;
+    margin: 10px;
+    padding-top: 0px;
+}
+
+.searchItem dt {
+    /* background-color: #28879c; */
+    margin-top: 0px;
+}
+
+.searchItem dd dt {
+    margin-top: 0px;
+    /* color: #ffffff; */
+}

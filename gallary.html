@@ -3,14 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <title>gallary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="style.css" , rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <header class="header">
+        <ul>
+            <li><a href="./index.html">index</a></li>
+            <li><a href="./gallary.html">gallary</a></li>
+            <li><a href="./llmservices.html">LLMサービス</a></li>
+            <li><a href="./form.html">form</a></li>
+        </ul>
+    </header>
+    <main>
         <h2>かわいいねこの紹介</h2>
         <ol>
-            <li>ツイッタのねこたち</li>
+            <li><a href="#variouscatsonx">ツイッタのねこたち</a></li>
             <li>ねこの紹介<ul>
                     <li><a href="#titlekoneroku">こねろくさん</a></li>
                 </ul>
@@ -18,19 +29,27 @@
             <li><a href="#titleqa">QA集</a></li>
 
         </ol>
-    </nav>
-    <div>
-        <h3 id="titlekoneroku"><a href="#voidkoneroku">黒猫のこねろく（X）</a></h3>
-        <img src="./images/void_koneroku.jfif" alt="こねろくさん">
-        <p id="voidkoneroku">虚無に溶けるこねろくさんだよ</p>
-    </div>
-    <div>
-        <h3 id="titleqa">QA集</h3>
-        <dl>
-            <dt>かわいいねこのアカウントはどうさがすの？</dt>
-            <dd>まずは一匹お気に入りのねこをさがしましょう</dd>
-        </dl>
-    </div>
+
+        <div>
+            <h3 id="variouscatsonx">ツイッタのねこたち</h3>
+            <p>インターネットには可愛い猫が溢れています。その中でも特にXで見られるねこを紹介します。</p>
+        </div>
+        <div>
+            <h3 id="titlekoneroku"><a href="#voidkoneroku">黒猫のこねろく（X）</a></h3>
+            <img src="./images/void_koneroku.jfif" alt="こねろくさん">
+            <p id="voidkoneroku">虚無に溶けるこねろくさんだよ</p>
+        </div>
+        <div>
+            <h3 id="titleqa">QA集</h3>
+            <dl>
+                <dt>かわいいねこのアカウントはどうさがすの？</dt>
+                <dd>まずは一匹お気に入りのねこをさがしましょう</dd>
+            </dl>
+        </div>
+    </main>
+    <footer><!-- 戻るリンク -->
+        <div id="back"><a href="./index.html">戻る</a></div>
+    </footer>
 </body>
 
 </html>
